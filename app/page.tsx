@@ -90,36 +90,30 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-gray-100">
+    <main className="min-h-screen bg-white">
       {/* Transparent Header Over Banner */}
       <header className="absolute top-0 left-0 w-full bg-transparent py-6 px-8 flex items-center z-20">
         <h1 className="text-2xl md:text-3xl font-bold text-black drop-shadow-md">
-          SHABNAM JEWELLERS
+          {/* SHABNAM JEWELLERS */}
         </h1>
       </header>
 
       {/* Full Screen Hero Banner */}
       <section className="relative w-full h-screen">
-        <Image
-          src="/images/profile-pic.jpg"
-          alt="Shabnam Jewellers"
-          fill
-          className="object-cover"
-          priority
-        />
+        
         {/* Overlay with Text + Button */}
-        <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">
+        <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4 bg-white">
+          <h1 className="text-4xl md:text-6xl font-bold text-black drop-shadow-lg">
             Welcome to <span className="text-yellow-400">Shabnam Jewellers</span>
           </h1>
-          <p className="mt-4 text-lg md:text-2xl text-gray-200 max-w-2xl">
+          <p className="mt-4 text-lg md:text-2xl text-black max-w-2xl">
             Premium Gold Jewellery Since 1975
           </p>
         </div>
       </section>
 
       {/* Founder */}
-      <section className="py-10 text-center bg-gray-500">
+      <section className="py-10 text-center bg-gray-300">
         <h2 className="text-2xl font-semibold mb-6">Founder</h2>
         <div
           onClick={() => setSelectedPerson(founder)}
@@ -133,7 +127,7 @@ export default function Home() {
             className="rounded-full border-4 border-yellow-600 shadow-lg hover:scale-105 transition"
           />
           <p className="mt-2 font-medium">{founder.name}</p>
-          <p className="text-sm text-white">{founder.role}</p>
+          <p className="text-sm text-black">{founder.role}</p>
         </div>
       </section>
 
@@ -155,7 +149,7 @@ export default function Home() {
                 className="rounded-full border-2 border-gray-400 shadow hover:scale-105 transition"
               />
               <p className="mt-2 font-medium">{ceo.name}</p>
-              <p className="text-sm text-gray-600">{ceo.role}</p>
+              <p className="text-sm text-white">{ceo.role}</p>
             </div>
           ))}
         </div>
