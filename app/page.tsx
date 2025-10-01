@@ -99,7 +99,7 @@ export default function Home() {
       </header>
 
       {/* Full Screen Hero Banner */}
-      <section className="relative w-full h-screen">
+      <section className="relative w-full h-80">
         
         {/* Overlay with Text + Button */}
         <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4 bg-white">
